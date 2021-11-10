@@ -1,7 +1,10 @@
-a = input()
-b = input()
+from itertools import permutations
+from sys import stdin
+from typing import MutableSequence
 
-if a > b:
-  print(a)
-else:
-  print(b)
+num = int(stdin.readline())
+li = map(int, stdin.readline().split())
+
+for i in permutations(li, num):
+    for j in range(num):
+        print(i[j])
