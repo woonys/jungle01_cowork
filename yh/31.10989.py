@@ -1,10 +1,10 @@
-from sys import _WinVersion, stdin
+from sys import stdin
 rpt = int(stdin.readline())
-i = 0
-li = [0] * 10000
+li = [0] * 10001
 
 for _ in range(rpt) :
      li[int(stdin.readline())] += 1
+     print(li[int(stdin.readline())])
 
 for i in range(10001):
      for j in li :
